@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react"
+
 // Importacao das secoes do site
 import Navbar from './components/Navbar.jsx';
 import HeroSection from './components/HeroSection.jsx';
@@ -17,6 +19,7 @@ export default function BarbeariaLandingPage() {
       <GaleriaSection />
       <Footer />
       <FloatingButton />
+      <Analytics/>
     </div>
   );
 }
