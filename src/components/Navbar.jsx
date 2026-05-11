@@ -142,7 +142,7 @@ const Navbar = () => {
               ))}
               <CustomCTA className="w-full">
                 <CalendarCheck className="w-5 h-5" />
-                Agendar Agora
+                Agendar meu horário
               </CustomCTA>
             </div>
           </motion.div>

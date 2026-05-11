@@ -26,7 +26,7 @@ const HeroSection = () => (
         </div>
         
         <h1 className="font-sans text-5xl md:text-6xl font-extrabold text-zinc-50 leading-[1.1] tracking-tight">
-          O seu estilo em <span className="text-amber-500">boas mãos</span> na Brooklyn Street
+          Barbearia Premium em Curitiba | Brooklyn  <span className="text-amber-500">Street </span>
         </h1>
         <p className="text-zinc-400 text-xl mt-6 max-w-xl font-light">
           Serviço de primeira qualidade em Curitiba. Profissionais habilidosos, ambiente organizado e a pontualidade que o seu dia a dia exige.
@@ -39,7 +39,7 @@ const HeroSection = () => (
         >
           <CustomCTA>
             <CalendarCheck className="w-6 h-6" />
-            Agendar on-line
+            Agendar meu horário
           </CustomCTA>
         </motion.div>
       </motion.div>
