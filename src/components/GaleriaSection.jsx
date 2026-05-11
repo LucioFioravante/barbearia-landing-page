@@ -15,6 +15,19 @@ const GaleriaSection = () => {
   };
   const galeriaFotos = getOrderedAssets(galeriaModules);
   const videos = getOrderedAssets(videoModules);
+
+  const generateAlt = (index) => {
+  const base = [
+    "corte degradê masculino em Curitiba",
+    "barbearia premium em Curitiba",
+    "corte masculino moderno em Curitiba",
+    "barbeiro profissional em Curitiba",
+    "corte fade em Curitiba",
+    "barba e cabelo masculino em Curitiba"
+  ];
+
+  return `${base[index % base.length]} - Brooklyn Street Barber`;
+};
   
   return (
     <section id="galeria" className="relative py-24 bg-zinc-900">
@@ -42,7 +55,7 @@ const GaleriaSection = () => {
             >
               <img 
                 src={img} 
-                alt={`Trabalho Barbearia ${idx + 1}`}
+                alt={generateAlt(idx)}
                 loading="lazy" 
                 className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
               />
