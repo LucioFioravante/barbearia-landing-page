@@ -8,6 +8,7 @@ import AvaliacoesSection from './components/AvaliacoesSection';
 import GaleriaSection from './components/GaleriaSection';
 import Footer from './components/Footer';
 import FloatingButton from './components/FloatingButton';
+import PlanosSection from "./components/PlanosSection.jsx";
 
 export default function BarbeariaLandingPage() {
   return (
@@ -15,6 +16,7 @@ export default function BarbeariaLandingPage() {
       <Navbar />
       <HeroSection />
       <DiferenciaisSection />
+      <PlanosSection />
       <AvaliacoesSection />
       <GaleriaSection />
       <Footer />

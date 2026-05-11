@@ -1,5 +1,4 @@
 import { MapPin, Clock, Phone } from 'lucide-react';
-import logo from '../assets/logo.png';
 import fachadaImage from '../assets/fachada-neon.jpg';
 
 const Footer = () => (
@@ -8,8 +7,13 @@ const Footer = () => (
       <div className="grid lg:grid-cols-2 gap-16 mb-16">
         
         {/* Info */}
-        <div className="flex flex-col gap-10">
-          <img src={logo} alt="Logo Brooklyn Street" loading="lazy" className="w-32 h-32 object-contain rounded-full" />
+        <div className="flex flex-col gap-8">
+          <img 
+            src={fachadaImage} 
+            alt="Fachada Brooklyn Street" 
+            loading="lazy" 
+            className="w-full max-w-[400px] h-48 object-cover rounded-2xl shadow-lg border border-zinc-800" 
+          />
           
           <ul className="space-y-6">
             <li className="flex items-start gap-4">
@@ -35,16 +39,34 @@ const Footer = () => (
             </li>
           </ul>
         </div>
+        
 
-        {/* Fachada */}
-        <div className="w-full h-[300px] lg:h-full min-h-[300px] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl relative">
-          <img 
-            src={fachadaImage} 
-            alt="Fachada Barbearia"
-            loading="lazy" 
-            className="w-full h-full object-cover"
-          />
-        </div>
+        {/* Seção do Mapa */}
+<div className="w-full h-[400px] lg:h-full min-h-[400px] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl relative group">
+  <iframe
+    src="https://www.google.com/maps?q=Av.+Mal.+Mascarenhas+de+Moraes,+1000+-+Atuba,+Curitiba+-+PR&output=embed"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }} /* Removi o filtro dark mode daqui */
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Localização Barbearia Brooklyn Street"
+  ></iframe>
+  
+  {/* Botão Flutuante sobre o mapa */}
+  <div className="absolute bottom-4 left-4 right-4 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+    <a 
+      href="https://maps.app.goo.gl/KGXTqxq9tuXpcqk47"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center justify-center gap-2 bg-zinc-950 text-zinc-50 border border-zinc-800 py-3 rounded-lg font-bold hover:bg-amber-500 hover:text-zinc-950 transition-colors shadow-2xl"
+    >
+      <MapPin className="w-5 h-5" />
+      Abrir no Google Maps / GPS
+    </a>
+  </div>
+</div>
         
       </div>
       
