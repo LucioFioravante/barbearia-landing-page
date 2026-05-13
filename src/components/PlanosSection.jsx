@@ -3,6 +3,8 @@ import { CheckCircle2, CreditCard, CalendarDays, Scissors, Tag, Star } from 'luc
 import SectionTitle from './SectionTitle';
 import CustomCTA from './CustomCTA';
 
+const assinaturaWhatsapp = "https://wa.me/04137799927?text=Olá,%20vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20assinatura!";
+
 const PlanosSection = () => {
   return (
     <section id="planos" className="relative py-24 bg-zinc-950 overflow-hidden">
@@ -102,7 +104,9 @@ const PlanosSection = () => {
             Economize todos os meses, mantenha o visual sempre alinhado e aproveite vantagens exclusivas para assinantes.
           </p>
 
-          <CustomCTA className="w-full md:w-auto px-12 py-4">
+          <CustomCTA 
+            href={assinaturaWhatsapp}
+            className="w-full md:w-auto px-12 py-4">
             Quero Ser Assinante
           </CustomCTA>
 

@@ -39,7 +39,7 @@ const HeroSection = () => (
         >
           <CustomCTA>
             <CalendarCheck className="w-6 h-6" />
-            Agendar meu horário
+            Reservar horário
           </CustomCTA>
         </motion.div>
       </motion.div>
@@ -54,8 +54,10 @@ const HeroSection = () => (
         
           <img 
             src={heroImage} 
-            alt="Barbeiro em ação"
-            loading="lazy"
+            alt="barbeiro realizando corte degradê em barbearia premium em Curitiba"
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync"
             className="w-full h-full block object-cover rounded-xl" 
           />
         </div>
